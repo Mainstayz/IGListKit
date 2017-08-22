@@ -21,10 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, IGListDiffOption) {
     /**
      Compare objects using pointer personality.
+     通过指针地址比较
      */
     IGListDiffPointerPersonality,
     /**
      Compare objects using `-[IGListDiffable isEqualToDiffableObject:]`.
+     通过 IGListDiffable isEqualToDiffableObject 进行比较
      */
     IGListDiffEquality
 };
